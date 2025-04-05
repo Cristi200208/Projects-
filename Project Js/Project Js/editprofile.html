@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./editprofile.js" type="module" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="landing-container">
+      <div class="landing-img">
+        <img src="https://source.unsplash.com/random?wallpapers" alt="random" />
+      </div>
+      <div class="lading-log-reg">
+        <form action="" class="landing-content-register">
+          <input
+            type="text"
+            id="userNameEdit"
+            required
+            minlength="6"
+            class="on-click"
+            readonly
+          />
+
+          <input
+            type="password"
+            id="passwordEdit"
+            required
+            minlength="6"
+            class="on-click"
+            readonly
+          />
+
+          <input type="email" id="emailEdit" required />
+
+          <input
+            type="text"
+            id="firstNameEdit"
+            required
+            minlength="2"
+            class="on-click"
+          />
+
+          <input
+            type="text"
+            id="lastNameEdit"
+            required
+            minlength="2"
+            class="on-click"
+          />
+          <input
+            type="date"
+            id="ageEdit"
+            placeholder="Age"
+            required
+            class="on-click"
+          />
+
+          <button type="submit" id="registerBtnEdit">Edit Profile</button>
+          <button id="backToHome">Back to Home</button>
+          <p id="errorEdit"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

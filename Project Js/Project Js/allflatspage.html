@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./allflatspage.js" type="module" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body-home-flats">
+    <nav class="nav-bar-container">
+      <h1 id="welcome"></h1>
+      <div class="nav-buttons">
+        <button id="homePage">Home Page</button>
+        <button id="addNewFlat">Add flat</button>
+        <button id="editProfile">Edit Profile</button>
+        <button id="logOut">Log out</button>
+        <button id="sortBtn">Sort By Categori</button>
+        <button id="filtreOptionsBtn">Filtre Options</button>
+      </div>
+    </nav>
+
+    <div class="filtre-options" id="filtreOptionsField">
+      <input type="number" id="priceMin" placeholder="Price Min" />
+      <input type="number" id="priceMax" placeholder="Price Max" />
+      <button id="filtrePrice">Filtre Price</button>
+
+      <input type="number" id="areaMin" placeholder="Area Min" />
+      <input type="number" id="areaMax" placeholder="Area Max" />
+      <button id="areaFiltre">Filtre Area Size</button>
+
+      <button id="resetFilteredOptions">Reset Filter Option</button>
+    </div>
+
+    <div class="filtre-categori" id="filtreCategoriField">
+      <button id="cityBtn">Sort by City</button>
+      <button id="lowHighBtn">Sort price Low-High</button>
+      <button id="highLowBtn">Sort price High-Low</button>
+    </div>
+
+    <div class="flats-container" id="flatsAppear">
+      <form class="add-flats">
+        <input id="city" type="text" placeholder="City" />
+        <input id="streetName" type="text" placeholder="Street name" />
+        <input id="streetNumber" type="number" placeholder="Street number " />
+        <input id="areaSize" type="number" placeholder="Area size " />
+        <label class="has-ac" for="checkbox">Has AC</label>
+        <select class="has-ac-options" name="hasac" id="hasAc">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        <input id="yearsBuilt" type="number" placeholder="Year built" />
+        <input id="rentPrice" type="number" placeholder="Rent price" />
+        <input id="dateAvailable" type="date" placeholder="Date available" />
+        <button id="addFlat">Add Flat</button>
+        <span id="errorFlats"></span>
+      </form>
+    </div>
+    <div class="every-flat-container-home">
+      <div class="no-flats-messagee" id="noFlatMessage">
+        <h1>No Flats Added</h1>
+      </div>
+      <div class="second-flat-container" id="flatContainer"></div>
+      <div class="second-flat-container" id="flatsFilteredContainer"></div>
+    </div>
+  </body>
+</html>
