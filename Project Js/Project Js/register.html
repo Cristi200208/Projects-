@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./register.js" type="module" defer></script>
+  </head>
+  <body style="overflow-y: hidden">
+    <div class="landing-container">
+      <div class="landing-img">
+        <img src="https://source.unsplash.com/random?wallpapers" alt="random" />
+      </div>
+      <div class="lading-log-reg">
+        <form action="" class="landing-content-register">
+          <h1>Sign Up</h1>
+          <input
+            type="text"
+            id="userName"
+            placeholder="UserName"
+            required
+            minlength="6"
+            class="on-click"
+          />
+
+          <input type="email" id="email" placeholder="Email" required />
+
+          <input
+            type="text"
+            id="firstName"
+            placeholder="First name"
+            required
+            minlength="2"
+            class="on-click"
+          />
+
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Last name"
+            required
+            minlength="2"
+            class="on-click"
+          />
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            minlength="6"
+            class="on-click"
+          />
+
+          <input
+            type="date"
+            id="age"
+            placeholder="Age"
+            required
+            class="on-click"
+          />
+
+          <button type="submit" id="registerBtn">Register</button>
+          <p id="error"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
